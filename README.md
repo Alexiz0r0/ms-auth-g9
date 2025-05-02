@@ -20,7 +20,7 @@ Este microservicio gestiona el registro y autenticación de usuarios con roles: 
 #### Registrar usuarios
 
 ```http
-  POST /auth/register
+POST /auth/register
 ```
 
 | Parameter | Type     | Description                         |
@@ -33,7 +33,7 @@ Este microservicio gestiona el registro y autenticación de usuarios con roles: 
 #### Autentica al usuario
 
 ```http
-  POST /auth/login
+POST /auth/login
 ```
 
 | Parameter | Type     | Description                         |
@@ -44,8 +44,8 @@ Este microservicio gestiona el registro y autenticación de usuarios con roles: 
 #### Validar el token
 
 ```http
-  GET /auth/validate
-  Authorization: Bearer eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJyb2wiOiJTVVBFUkFETUlOIiwiaWF0IjoxNzQ2MjA3ODU2LCJleHAiOjE3NDYyMDgwOTYsInN1YiI6InN1cGVyQHN1cGVyLmNvbSJ9.K70iPItBEHeXNNfM7v6wurYYlzpSIgRTLCFeZYeZ6wZsdZ0-mYg1wr-rIgVMjwJXdwq1Cq1mjyuS7yqn1OiuMw
+GET /auth/validate
+Authorization: Bearer eyJ0eXBlIjoiSldUIiwiYWxnIjoiSFM1MTIifQ.eyJyb2wiOiJTVVBFUkFETUlOIiwiaWF0IjoxNzQ2MjA3ODU2LCJleHAiOjE3NDYyMDgwOTYsInN1YiI6InN1cGVyQHN1cGVyLmNvbSJ9.K70iPItBEHeXNNfM7v6wurYYlzpSIgRTLCFeZYeZ6wZsdZ0-mYg1wr-rIgVMjwJXdwq1Cq1mjyuS7yqn1OiuMw
 ```
 
 #### Listar todos los usuarios filtrados por el ROL `SUPERADMIN`
